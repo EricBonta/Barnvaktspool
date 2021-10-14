@@ -54,20 +54,43 @@
     <header class="masthead">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <img src="sarabild.jpg">
+                <div class="text-center">
+                    <h1 class="font-alt">Bokningsformulär</h1>
                 </div>
-                <div class="col-md-6">
-                    <h1>Super snälla silver Sara</h1>
-                    <h2>&#9733;&#9733;&#9733;&#9733;&#9734;</h2>
-                    <h3>Pris:</h3>
-                    <h4>200kr/h</h4>
-                    <h3>Beskrivning: </h3>
-                    <h5>Jag är jättesnäll och tar gärna hand om dina barn när du inte kan.</h5>
+
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 mt-5">
+                            <label>Starttid: </label>
+                            <input type="time" class="form-control" />
+                        </div>
+                        <div class="col-md-6 mt-5">
+                            <label>Sluttid: </label>
+                            <input type="time" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mt-5">
+                            <label>Antal barn: </label>
+                            <input type="number" class="form-control"/>
+                        </div>
+                        <div class="col-md-6 mt-5">
+                            <label>Telefonnummer: </label>
+                            <input type="number" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="">
+                            <label>Övrig information: </label>
+                            <textarea type="text" class="form-control" rows="6"></textarea>
+                        </div>
+                    </div>
                     <br/>
-                    <br/>
-                    <button class="btn btn-primary" onclick="bokaformredirect()">Boka</button>
-                </div>
+                    <div class="mt-5 text-center">
+                        <a onclick="bokad()" class="btn btn-primary px-5 py-3" style="font-size: 1.5rem;" href="#">Boka</a>
+                    </div>
+                    <br />
+                </form>
             </div>
         </div>
     </header>
@@ -177,9 +200,11 @@
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
     <script>
-        function bokaformredirect() {
-            location.href = "";
+        function bokad() {
+            alert("Du har nu bokat en barnvakt!");
+            location.href = "index.html";
         }
+        
     </script>
 </body>
 
