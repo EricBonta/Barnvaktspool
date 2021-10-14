@@ -644,25 +644,49 @@ progress {
   .container-sm, .container {
     max-width: 540px;
   }
+  .mainImg {
+    position: relative;
+    max-width: 200px;
+    max-height: 100px;
+  }
 }
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
     max-width: 720px;
+  }
+  .mainImg {
+    /* position: relative; */
+    max-width: 350px;
+    max-height: 220px;
   }
 }
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
     max-width: 960px;
   }
+  .mainImg {
+    /* position: relative; */
+    max-width: 500px;
+    max-height: 400px;
+  }
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1140px;
   }
+  .mainImg {
+    /* position: relative; */
+    max-width: 500px;
+    max-height: 400px;
+  }
 }
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
+    max-width: 1360px;
+  }
+  .mainImg {
+    max-width: 600px;
+    max-height: 400px;
   }
 }
 .row {
