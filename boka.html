@@ -19,6 +19,8 @@
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
         rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
@@ -28,17 +30,18 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div class="container px-2">
             <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="bi-list"></i>
             </button>
-            <a class="navbar-brand fw-bold" href="#page-top">{BVP}</a>
-
+            <a class="navbar-brand fw-bold" href="index.html">{BVP}</a>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item"><a class="nav-link me-lg-5" href="#boka">Boka</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-5" href="#kontakt">Kontakta Oss</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-5" href="#om">Om Oss</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-5" href="#registrera">Logga in / Registrera</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-5" href="boka.html">Boka</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-5" href="kontakt.html">Kontakta Oss</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-5" href="om.html">Om Oss</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-5" href="registrera.html">Logga in / Registrera</a>
+                    </li>
                 </ul>
                 <!-- <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
                         <span class="d-flex align-items-center">
@@ -52,29 +55,83 @@
     <!-- Mashead header-->
     <header class="masthead">
         <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-sm-6">
-                <div class="card">
-                  <div class="card-body">
-                      <img src="bild1.jpg" class="card-img-top">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
+
+            <div class="text-center">
+                <h1 class="font-alt">Välj den tid och plats barnvakten behövs</h1>
+            </div>
+            <div class="mt-5">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Datum:</label>
+                            <input type="date" class="form-control" />
+                        </div>
+                        <div class="col-md-6">
+                            <label>Adress:</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <br />
+                </form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <button onclick="myFunction()" class="btn btn-primary">Fortsätt</button>
+                    </div>
                 </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="card">
-                  <div class="card-body">
-                    <img src="bild2.jpg" class="card-img-top">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
+            </div>
+
+            <div id="hideElement" class="d-none">
+                <div class="dropdown mt-5">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sortera
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">Action</button>
+                        <button class="dropdown-item" type="button">Another action</button>
+                        <button class="dropdown-item" type="button">Something else here</button>
+                    </div>
                 </div>
-              </div>
+
+                <table class="table table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Namn</th>
+                            <th scope="col">Pris/h</th>
+                            <th scope="col">Rating</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#">Super snälla silver Sara</a></td>
+                            <td>200kr</td>
+                            <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+                        </tr>
+                        <tr>
+                            <td>Mustiga Micke</td>
+                            <td>160kr</td>
+                            <td>&#9733;&#9733;&#9733;&#9734;&#9734;</td>
+                        </tr>
+                        <tr>
+                            <td>Strosande Sickan</td>
+                            <td>210kr</td>
+                            <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+                        </tr>
+                        <tr>
+                            <td>Kula Kristina</td>
+                            <td>180kr</td>
+                            <td>&#9733;&#9733;&#9733;&#9734;&#9734;</td>
+                        </tr>
+                        <tr>
+                            <td>Frossande Fredrik</td>
+                            <td>220kr</td>
+                            <td>&#9733;&#9733;&#9734;&#9734;&#9734;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </div>
+        </div>
     </header>
     <!-- App features section-->
     <!-- Basic features section-->
@@ -91,6 +148,12 @@
                 <span class="mx-1">&middot;</span>
                 <a href="#!">FAQ</a>
             </div>
+            <div>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-instagram"></i>
+            </div>
         </div>
     </footer>
     <!-- Feedback Modal-->
@@ -100,7 +163,7 @@
                 <div class="modal-header bg-gradient-primary-to-secondary p-4">
                     <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Send feedback</h5>
                     <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
+                            aria-label="Close"></button>
                 </div>
                 <div class="modal-body border-0 p-4">
                     <!-- * * * * * * * * * * * * * * *-->
@@ -114,14 +177,14 @@
                         <!-- Name input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" id="name" type="text" placeholder="Enter your name..."
-                                data-sb-validations="required" />
+                                   data-sb-validations="required" />
                             <label for="name">Full name</label>
                             <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                         </div>
                         <!-- Email address input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" id="email" type="email" placeholder="name@example.com"
-                                data-sb-validations="required,email" />
+                                   data-sb-validations="required,email" />
                             <label for="email">Email address</label>
                             <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                             <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
@@ -129,18 +192,20 @@
                         <!-- Phone number input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
-                                data-sb-validations="required" />
+                                   data-sb-validations="required" />
                             <label for="phone">Phone number</label>
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">
+                                A phone number is required.
                             </div>
                         </div>
                         <!-- Message input-->
                         <div class="form-floating mb-3">
                             <textarea class="form-control" id="message" type="text"
-                                placeholder="Enter your message here..." style="height: 10rem"
-                                data-sb-validations="required"></textarea>
+                                      placeholder="Enter your message here..." style="height: 10rem"
+                                      data-sb-validations="required"></textarea>
                             <label for="message">Message</label>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
+                            <div class="invalid-feedback" data-sb-feedback="message:required">
+                                A message is required.
                             </div>
                         </div>
                         <!-- Submit success message-->
@@ -152,8 +217,7 @@
                                 <div class="fw-bolder">Form submission successful!</div>
                                 To activate this form, sign up at
                                 <br />
-                                <a
-                                    href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                             </div>
                         </div>
                         <!-- Submit error message-->
@@ -164,8 +228,12 @@
                             <div class="text-center text-danger mb-3">Error sending message!</div>
                         </div>
                         <!-- Submit Button-->
-                        <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg disabled"
-                                id="submitButton" type="submit">Submit</button></div>
+                        <div class="d-grid">
+                            <button class="btn btn-primary rounded-pill btn-lg disabled"
+                                    id="submitButton" type="submit">
+                                Submit
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -180,6 +248,15 @@
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-</body>
 
+    <script>
+
+        function myFunction() {
+            var element = document.getElementById("hideElement");
+            element.classList.remove("d-none");
+        }
+
+    </script>
+</body>
 </html>
+

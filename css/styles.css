@@ -2020,6 +2020,8 @@ progress {
   padding: 0.25rem 0.25rem;
 }
 
+
+
 .table-bordered > :not(caption) > * {
   border-width: 1px 0;
 }
@@ -11301,6 +11303,10 @@ textarea.form-control-lg {
 }
 html {
   scroll-padding-top: 4.5rem;
+}
+
+html body {
+  min-height: 100%
 }
 
 .bg-black {
