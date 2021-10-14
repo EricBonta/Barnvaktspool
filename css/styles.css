@@ -655,7 +655,7 @@ progress {
     max-width: 720px;
   }
   .mainImg {
-    /* position: relative; */
+    position: relative;
     max-width: 350px;
     max-height: 220px;
   }
@@ -665,7 +665,7 @@ progress {
     max-width: 960px;
   }
   .mainImg {
-    /* position: relative; */
+    position: relative;
     max-width: 500px;
     max-height: 400px;
   }
@@ -675,7 +675,7 @@ progress {
     max-width: 1140px;
   }
   .mainImg {
-    /* position: relative; */
+    position: relative;
     max-width: 500px;
     max-height: 400px;
   }
@@ -685,6 +685,7 @@ progress {
     max-width: 1360px;
   }
   .mainImg {
+    position: relative;
     max-width: 600px;
     max-height: 400px;
   }
